@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Donate | Vortex Security</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --bg: #0b0f1a;
+            --card: #12182b;
+            --accent: #5eead4;
+            --text: #e5e7eb;
+            --muted: #9ca3af;
+            --border: #1f2937;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background: radial-gradient(circle at top, #111827, var(--bg));
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            padding: 24px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            font-size: 34px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .subtitle {
+            color: var(--muted);
+            margin-top: 10px;
+            font-size: 15px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: linear-gradient(180deg, #141a33, var(--card));
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 20px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .coin {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .coin span {
+            color: var(--accent);
+            font-size: 22px;
+        }
+
+        .address {
+            background: #0b1022;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 12px;
+            font-size: 13px;
+            word-break: break-all;
+            color: #d1d5db;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        .footer strong {
+            color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <div class="logo">Vortex <span>Security</span></div>
+        <div class="subtitle">
+            Support our cybersecurity research, tools, and ethical hacking initiatives
+        </div>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="coin"><span>◆</span> Ethereum (ETH)</div>
+            <div class="address">
+                0x88E5448610bF78aE60094331779357A6C9550074
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="coin"><span>₿</span> Bitcoin (BTC)</div>
+            <div class="address">
+                bc1qcrytyt9trfkj7xxsfj0gwrkvyvnxtv9qxhv6fq
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="coin"><span>◈</span> Tether (USDT)</div>
+            <div class="address">
+                0x88E5448610bF78aE60094331779357A6C9550074
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="coin"><span>✕</span> XRP</div>
+            <div class="address">
+                r3PuyazfW1fq6B8yBNhNDDKD4i4zHAji74
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        © 2025 <strong>Vortex Security</strong> — Ethical Security • Research • Protection
+    </div>
+
+</div>
+
+</body>
+</html>
